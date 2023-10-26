@@ -6,6 +6,7 @@ body {
     justify-content: space-between;
     align-items: center;
     overflow-x: hidden;
+    font-family: BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 
 svg {
@@ -22,6 +23,24 @@ main {
 
 header {
     text-align: center;
+}
+.content{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap:50px
+}
+#git{
+    margin: 0 auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid #c9d1d9; 
+    height: 143px;
+    width: 750px;
 }
 
 footer {
@@ -40,10 +59,4 @@ footer {
     width: 3rem;
     height: 3rem;
     background-size: 100% 100%;
-}
-
-.rsschool:hover,
-.image_github:hover,
-.orientation div:hover {
-    opacity: 0.75;
 }
