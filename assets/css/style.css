@@ -1,3 +1,10 @@
+:root{
+    --back: #f6f8fa;
+    --border: #c9d1d9;
+    --header: #c9d1d9;
+    --text: #1F2328;
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -7,6 +14,8 @@ body {
     align-items: center;
     overflow-x: hidden;
     font-family: BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    background-color: var(--back);
+    color: var(--text)
 }
 
 svg {
@@ -21,8 +30,18 @@ main {
     padding: 20px 50px;
 }
 
-header {
+header,
+footer {
     text-align: center;
+    background-color: var(--header);
+}
+
+header{
+    border-bottom: 1px solid var(--border);
+}
+
+footer{
+    border-top: 1px solid var(--border);
 }
 
 /* The switch - the box around the slider */
@@ -48,7 +67,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: var(--text);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
@@ -62,19 +81,10 @@ header {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--back);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
-
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
   }
   
   input:checked + .slider:before {
@@ -97,7 +107,7 @@ header {
     border-top-right-radius: 6px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    border: 1px solid #c9d1d9; 
+    border: 1px solid var(--border); 
     height: 143px;
     width: 750px;
 }
