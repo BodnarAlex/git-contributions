@@ -1,5 +1,9 @@
 window.onload = function () {
     let checkbox = document.querySelector(".offLight");
+    let mounths = document.querySelector("#months");
+
+    let mounth_array = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov'];
+
     checkbox.addEventListener('change', e => {
         if(e.target.checked){
             document.documentElement.style.setProperty('--back', '#21262d');
@@ -13,4 +17,10 @@ window.onload = function () {
             document.documentElement.style.setProperty('--text', '#1F2328');
         }
     });
+
+    for(let i=0; i<12 ; i++){
+        let div = document.createElement('div');
+        div.innerHTML = mounth_array[i];
+        document.mounths.append(div);
+    }
 }

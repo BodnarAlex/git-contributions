@@ -110,6 +110,30 @@ footer{
     border: 1px solid var(--border); 
     height: 143px;
     width: 750px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#days{
+    width: 28px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 18px 5px;
+    justify-content: space-between;
+    height: 82px;
+
+}
+
+#months{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 18px;
+}
+
+#block_item{
+    border: 1px solid black;
+    width: 693px;
+    height: 82px;
 }
 
 footer {
