@@ -1,8 +1,9 @@
 window.onload = function () {
     let checkbox = document.querySelector(".offLight");
     let mounths = document.querySelector("#months");
+    let block  = document.querySelector("#block_item");
 
-    let mounth_array = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov'];
+    let mounth_array = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov', 'Dec'];
 
     checkbox.addEventListener('change', e => {
         if(e.target.checked){
@@ -18,9 +19,15 @@ window.onload = function () {
         }
     });
 
-    for(let i=0; i<12 ; i++){
+    for(let i=0; i < 12 ; i++){
         let div = document.createElement('div');
         div.innerHTML = mounth_array[i];
-        document.mounths.append(div);
+        mounths.append(div);
+    }
+
+    for(let i=0; i < 365 ; i++){
+        let div = document.createElement('div');
+        div.className = 'item';
+        block.append(div);
     }
 }
