@@ -19,15 +19,23 @@ window.onload = function () {
         }
     });
 
+    addMounth();
+    addDays();
+
+
+function addMounth(){
     for(let i=0; i < 12 ; i++){
         let div = document.createElement('div');
         div.innerHTML = mounth_array[i];
         mounths.append(div);
     }
+}
 
+function addDays(){
     for(let i=0; i < 365 ; i++){
         let div = document.createElement('div');
         div.className = 'item';
         block.append(div);
     }
+}
 }
