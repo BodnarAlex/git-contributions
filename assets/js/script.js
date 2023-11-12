@@ -29,24 +29,19 @@ window.onload = function () {
             if (len == 1) {
                 item.classList.add('stage1');
             } else {
-                console.log(item.classList[1]);
-                switch (item.classList[1]) {
-                    case 'stage1':
-                        item.classList.remove('stage1');
-                        item.classList.add('stage2');
-                        break;
-                    case 'stage2':
-                        item.classList.remove('stage2');
-                        item.classList.add('stage3');
-                        break;
-                    case 'stage3':
-                        item.classList.remove('stage3');
-                        item.classList.add('stage4');
-                        break;
-                    case 'stage4':
-                        item.classList.remove('stage4');
-                        break;
+                console.log('len>1');
+
+                let newClass = item.classList[1];
+                item.classList.remove(newClass);
+
+                if(newClass != 'stage4'){
+                    let newNumber = Number(newClass[5])+1;
+                    console.log(newNumber);
+
+                    item.classList.add('stage' + newNumber);
+
                 }
+
             }
         })
     })
