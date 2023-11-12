@@ -3,10 +3,10 @@
     --border: #c9d1d9;
     --header: #c9d1d9;
     --text: #1F2328;
-    --stage1: #0e4429;;
-    --stage2: #006d32;;
-    --stage3: #26a641;;
-    --stage4: #39d353;;
+    --stage1: #0e4429;
+    --stage2: #006d32;
+    --stage3: #26a641;
+    --stage4: #39d353;
 }
 
 body {
@@ -145,6 +145,7 @@ footer{
 .item{
     width: 9px;
     height:9px;
+    border-radius: 2px;
     background-color: var(--header);
 }
 
@@ -164,6 +165,15 @@ footer{
     background-color: var(--stage4);
 }
 
+#less_more{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    gap: 3px;
+    font-size: 14px;
+    margin-top: 10px;
+    align-items: baseline;
+}
 footer {
     display: flex;
     flex-flow: row nowrap;

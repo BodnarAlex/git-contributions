@@ -11,11 +11,21 @@ window.onload = function () {
             document.documentElement.style.setProperty('--border', '#b1bac4');
             document.documentElement.style.setProperty('--header', '#161b22');
             document.documentElement.style.setProperty('--text', '#c9d1d9');
+
+            document.documentElement.style.setProperty('--stage1', '#0e4429');
+            document.documentElement.style.setProperty('--stage2', '#006d32');
+            document.documentElement.style.setProperty('--stage3', '#26a641');
+            document.documentElement.style.setProperty('--stage4', '#39d353');
         } else {
             document.documentElement.style.setProperty('--back', '#f6f8fa');
             document.documentElement.style.setProperty('--border', '#c9d1d9');
             document.documentElement.style.setProperty('--header', '#c9d1d9');
             document.documentElement.style.setProperty('--text', '#1F2328');
+
+            document.documentElement.style.setProperty('--stage1', '#39d353');
+            document.documentElement.style.setProperty('--stage2', '#26a641');
+            document.documentElement.style.setProperty('--stage3', '#006d32');
+            document.documentElement.style.setProperty('--stage4', '#0e4429');
         }
     });
 
