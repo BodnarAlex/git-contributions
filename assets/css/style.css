@@ -3,6 +3,10 @@
     --border: #c9d1d9;
     --header: #c9d1d9;
     --text: #1F2328;
+    --stage1: #0e4429;;
+    --stage2: #006d32;;
+    --stage3: #26a641;;
+    --stage4: #39d353;;
 }
 
 body {
@@ -44,22 +48,19 @@ footer{
     border-top: 1px solid var(--border);
 }
 
-/* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
   }
-  
-  /* Hide default HTML checkbox */
+
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
-  /* The slider */
+
   .slider {
     position: absolute;
     cursor: pointer;
@@ -73,7 +74,7 @@ footer{
     border-radius: 34px;
 
   }
-  
+
   .slider:before {
     position: absolute;
     content: "";
@@ -86,13 +87,13 @@ footer{
     transition: .4s;
     border-radius: 50%;
   }
-  
+
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
-  
+
 .content{
     margin: 0 auto;
     text-align: center;
@@ -107,7 +108,7 @@ footer{
     border-top-right-radius: 6px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    border: 1px solid var(--border); 
+    border: 1px solid var(--border);
     height: 143px;
     width: 750px;
     display: flex;
@@ -136,15 +137,33 @@ footer{
     height: 82px;
     display: flex;
     flex-flow: column wrap;
-    gap: 2px;
+    gap: 3px;
     border-radius: 2px;
     margin: 2px;
 }
+
 .item{
-    width: 8px;
-    height: 8px;
-    border: 1px solid var(--header);
+    width: 9px;
+    height:9px;
+    background-color: var(--header);
 }
+
+.item.stage1{
+    background-color: var(--stage1);
+}
+
+.item.stage2{
+    background-color: var(--stage2);
+}
+
+.item.stage3{
+    background-color: var(--stage3);
+}
+
+.item.stage4{
+    background-color: var(--stage4);
+}
+
 footer {
     display: flex;
     flex-flow: row nowrap;
