@@ -7,6 +7,7 @@
     --stage2: #006d32;
     --stage3: #26a641;
     --stage4: #39d353;
+    --invert: 0;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
 
 svg {
     cursor: pointer;
+    filter: invert(var(--invert));
 }
 
 header,

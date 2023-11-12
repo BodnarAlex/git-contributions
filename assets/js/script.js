@@ -16,6 +16,8 @@ window.onload = function () {
             document.documentElement.style.setProperty('--stage2', '#006d32');
             document.documentElement.style.setProperty('--stage3', '#26a641');
             document.documentElement.style.setProperty('--stage4', '#39d353');
+
+            document.documentElement.style.setProperty('--invert', '1');
         } else {
             document.documentElement.style.setProperty('--back', '#f6f8fa');
             document.documentElement.style.setProperty('--border', '#c9d1d9');
@@ -26,6 +28,8 @@ window.onload = function () {
             document.documentElement.style.setProperty('--stage2', '#26a641');
             document.documentElement.style.setProperty('--stage3', '#006d32');
             document.documentElement.style.setProperty('--stage4', '#0e4429');
+
+            document.documentElement.style.setProperty('--invert', '0');
         }
     });
 
