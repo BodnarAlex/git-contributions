@@ -22,32 +22,20 @@ window.onload = function () {
     addMounth();
     addDays();
 
-    document.querySelectorAll(".item").forEach((item, index) => { // here
-        item.addEventListener('click', arrow => {
-            let len = item.classList.length;
-            console.log(len);
-            if (len == 1) {
-                item.classList.add('stage1');
-            } else {
-                console.log('len>1');
+    let mouseDown = false;
+    document.addEventListener('mousedown', arrow => { mouseDown = true });
+    document.addEventListener('mouseup', arrow => { mouseDown = false });
 
-                let newClass = item.classList[1];
+    document.querySelectorAll(".item").forEach((item, index) => {
+        item.addEventListener('mouseover', arrow => {
+            if (mouseDown) {
+                let newClass = (!item.classList[1]) ? 'stage0' : item.classList[1];
                 item.classList.remove(newClass);
-
-                if(newClass != 'stage4'){
-                    let newNumber = Number(newClass[5])+1;
-                    console.log(newNumber);
-
-                    item.classList.add('stage' + newNumber);
-
-                }
-
+                let numberOfClass = (Number(newClass[5]) < 4) ? Number(newClass[5]) + 1 : 0;
+                item.classList.add('stage' + numberOfClass);
             }
         })
     })
-
-
-    //(item => item.classList.add('stage4'));
 
     function addMounth() {
         for (let i = 0; i < 12; i++) {
