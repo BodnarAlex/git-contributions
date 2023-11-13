@@ -35,6 +35,12 @@ main {
     width: 100%;
     padding: 20px 50px;
 }
+main{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
 
 header,
 footer {
@@ -74,7 +80,6 @@ footer{
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
-
   }
 
   .slider:before {
@@ -99,7 +104,6 @@ footer{
 .content{
     margin: 0 auto;
     text-align: center;
-    width: 80%;
     display: flex;
     flex-flow: column nowrap;
     gap:50px;
