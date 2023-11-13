@@ -41,7 +41,7 @@ window.onload = function () {
     document.addEventListener('mouseup', arrow => { mouseDown = false });
 
     document.querySelectorAll(".item").forEach((item, index) => {
-        item.addEventListener('mouseover', arrow => {
+        item.addEventListener('mouseout', arrow => {
             if (mouseDown) {
                 let newClass = (!item.classList[1]) ? 'stage0' : item.classList[1];
                 item.classList.remove(newClass);

@@ -3,10 +3,10 @@
     --border: #c9d1d9;
     --header: #c9d1d9;
     --text: #1F2328;
-    --stage1: #0e4429;
-    --stage2: #006d32;
-    --stage3: #26a641;
-    --stage4: #39d353;
+    --stage1: #39d353;
+    --stage2: #26a641;
+    --stage3: #006d32;
+    --stage4: #0e4429;
     --invert: 0;
 }
 
@@ -18,9 +18,9 @@ body {
     justify-content: space-between;
     align-items: center;
     overflow-x: hidden;
-    font-family: BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     background-color: var(--back);
-    color: var(--text)
+    color: var(--text);
+    font-family: 'Noto Sans', sans-serif;
 }
 
 svg {
@@ -102,7 +102,8 @@ footer{
     width: 80%;
     display: flex;
     flex-flow: column nowrap;
-    gap:50px
+    gap:50px;
+    font-size: 13px;
 }
 #git{
     margin: 0 auto;
@@ -122,9 +123,10 @@ footer{
     display: flex;
     flex-flow: column nowrap;
     margin: 18px 5px;
-    justify-content: space-between;
+    justify-content: center;
     height: 82px;
-
+    gap:6px;
+    padding-top: 2px;
 }
 
 #months{
@@ -132,6 +134,7 @@ footer{
     flex-flow: row nowrap;
     height: 18px;
     justify-content: space-between;
+    margin-left: 3px;
 }
 
 #block_item{
@@ -141,7 +144,7 @@ footer{
     flex-flow: column wrap;
     gap: 3px;
     border-radius: 2px;
-    margin: 2px;
+    margin: 3px 0 0 3px;
 }
 
 .item{
@@ -172,7 +175,7 @@ footer{
     flex-flow: row nowrap;
     justify-content: end;
     gap: 3px;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 10px;
     align-items: baseline;
 }
